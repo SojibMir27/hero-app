@@ -1,7 +1,6 @@
 import React from "react";
 
 const AppsCard = ({ app }) => {
-  console.log(app);
   const { image, title, downloads, ratingAvg } = app;
 
   return (
