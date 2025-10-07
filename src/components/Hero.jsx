@@ -17,11 +17,21 @@ const Hero = () => {
           into digital experiences that truly make an impact.
         </p>
         <div className="flex justify-center gap-2 mt-4">
-          <button className="btn font-semibold p-4">
+          <button
+            onClick={() =>
+              window.open("https://play.google.com/store/apps", "_blank")
+            }
+            className="btn font-semibold p-4"
+          >
             <img className="w-5" src="playstor.png" alt="" />
             Google Play
           </button>
-          <button className="btn font-semibold p-4">
+          <button
+            onClick={() =>
+              window.open("https://www.apple.com/app-store/", "_blank")
+            }
+            className="btn font-semibold p-4"
+          >
             <img className="w-5" src="Appstor.png" alt="" />
             App Store
           </button>
