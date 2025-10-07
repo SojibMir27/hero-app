@@ -1,5 +1,6 @@
 import { Github } from "lucide-react";
 import React from "react";
+import { NavLink } from "react-router";
 
 const Navbar = () => {
   return (
@@ -29,37 +30,41 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow font-semibold"
           >
             <li>
-              <a>Home</a>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <a>Apps</a>
+              <NavLink to="/apps">Apps</NavLink>
             </li>
             <li>
-              <a>Installation</a>
+              <NavLink to="/installation">Installation</NavLink>
             </li>
           </ul>
         </div>
         <div className="ml-3">
-          <a className="font-bold text-lg md:text-2xl text-[#9f62f2] flex">
-            <img className="w-8 h-8" src="logo.png" alt="" /> HERO.IO
-          </a>
+          <NavLink
+            to="/"
+            className="font-bold text-lg md:text-2xl text-[#9f62f2] flex"
+          >
+            <img className="w-8 h-8" src="logo.png" alt="" />
+            HERO.IO
+          </NavLink>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 font-semibold">
           <li>
-            <a>Home</a>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <a>Apps</a>
+            <NavLink to="/apps">Apps</NavLink>
           </li>
           <li>
-            <a>Installation</a>
+            <NavLink to="/installation">Installation</NavLink>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn bg-gradient-to-br from-[#632ee3] to-[#9f62f2] text-white font-semibold">
+        <a className="btn bg-gradient-to-br from-[#632ee3] to-[#9f62f2] text-white font-semibold" href="https://github.com/SojibMir27" target="_blank">
           <Github className="invert" />
           Contribute
         </a>
