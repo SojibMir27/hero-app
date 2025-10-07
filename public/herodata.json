@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/WhatsApp_icon.png",
+    "title": "WhatsApp Messenger",
+    "companyName": "WhatsApp LLC",
+    "id": 1,
+    "description": "Free, simple, secure messaging and calling for anyone around the world.",
+    "size": 95,
+    "reviews": 185000000,
+    "ratingAvg": 4.3,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 2400000 },
+      { "name": "2 star", "count": 1600000 },
+      { "name": "3 star", "count": 5000000 },
+      { "name": "4 star", "count": 15000000 },
+      { "name": "5 star", "count": 162000000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Facebook_icon.svg",
+    "title": "Facebook",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 2,
+    "description": "Connect with friends, family and communities of people who share your interests.",
+    "size": 110,
+    "reviews": 125000000,
+    "ratingAvg": 4.1,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 6000000 },
+      { "name": "2 star", "count": 5000000 },
+      { "name": "3 star", "count": 9000000 },
+      { "name": "4 star", "count": 22000000 },
+      { "name": "5 star", "count": 83000000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Instagram_logo_2022.svg",
+    "title": "Instagram",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 3,
+    "description": "Capture and share moments with the world through photos and videos.",
+    "size": 150,
+    "reviews": 147000000,
+    "ratingAvg": 4.4,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 4000000 },
+      { "name": "2 star", "count": 3200000 },
+      { "name": "3 star", "count": 9000000 },
+      { "name": "4 star", "count": 28000000 },
+      { "name": "5 star", "count": 102000000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Twitter-logo.svg",
+    "title": "X (formerly Twitter)",
+    "companyName": "X Corp.",
+    "id": 4,
+    "description": "Real-time updates, news, and global conversations in 280 characters.",
+    "size": 89,
+    "reviews": 89000000,
+    "ratingAvg": 4.0,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 4100000 },
+      { "name": "2 star", "count": 3300000 },
+      { "name": "3 star", "count": 7100000 },
+      { "name": "4 star", "count": 19000000 },
+      { "name": "5 star", "count": 55500000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/YouTube_social_white_square_%282017%29.svg",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "id": 5,
+    "description": "Enjoy the videos and music you love, upload original content, and share it all.",
+    "size": 175,
+    "reviews": 120000000,
+    "ratingAvg": 4.5,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 3200000 },
+      { "name": "2 star", "count": 2800000 },
+      { "name": "3 star", "count": 6400000 },
+      { "name": "4 star", "count": 20000000 },
+      { "name": "5 star", "count": 88000000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d0/TikTok_icon_black.svg",
+    "title": "TikTok",
+    "companyName": "ByteDance",
+    "id": 6,
+    "description": "Short-form videos that entertain, inspire, and connect people worldwide.",
+    "size": 165,
+    "reviews": 98000000,
+    "ratingAvg": 4.4,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 3500000 },
+      { "name": "2 star", "count": 2800000 },
+      { "name": "3 star", "count": 6200000 },
+      { "name": "4 star", "count": 21000000 },
+      { "name": "5 star", "count": 64500000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Spotify_icon.svg",
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "id": 7,
+    "description": "Stream millions of songs, podcasts, and playlists for free.",
+    "size": 130,
+    "reviews": 92000000,
+    "ratingAvg": 4.4,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 2100000 },
+      { "name": "2 star", "count": 1600000 },
+      { "name": "3 star", "count": 5100000 },
+      { "name": "4 star", "count": 18000000 },
+      { "name": "5 star", "count": 65000000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/96/Google_Maps_icon_%282020%29.svg",
+    "title": "Google Maps",
+    "companyName": "Google LLC",
+    "id": 8,
+    "description": "Navigate your world faster and easier with real-time GPS navigation.",
+    "size": 75,
+    "reviews": 103000000,
+    "ratingAvg": 4.6,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1900000 },
+      { "name": "2 star", "count": 1100000 },
+      { "name": "3 star", "count": 4000000 },
+      { "name": "4 star", "count": 18000000 },
+      { "name": "5 star", "count": 78000000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Gmail_Icon_%282020%29.svg",
+    "title": "Gmail",
+    "companyName": "Google LLC",
+    "id": 9,
+    "description": "Secure, smart, and easy-to-use email service from Google.",
+    "size": 85,
+    "reviews": 64000000,
+    "ratingAvg": 4.5,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1600000 },
+      { "name": "2 star", "count": 1100000 },
+      { "name": "3 star", "count": 3200000 },
+      { "name": "4 star", "count": 12000000 },
+      { "name": "5 star", "count": 46000000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2d/LinkedIn_logo_initials.png",
+    "title": "LinkedIn",
+    "companyName": "Microsoft Corporation",
+    "id": 10,
+    "description": "Build your professional network and discover new opportunities.",
+    "size": 102,
+    "reviews": 42000000,
+    "ratingAvg": 4.3,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1500000 },
+      { "name": "2 star", "count": 900000 },
+      { "name": "3 star", "count": 2200000 },
+      { "name": "4 star", "count": 8000000 },
+      { "name": "5 star", "count": 29500000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Netflix_2015_logo.svg",
+    "title": "Netflix",
+    "companyName": "Netflix, Inc.",
+    "id": 11,
+    "description": "Watch TV shows and movies recommended for you, including award-winning originals.",
+    "size": 160,
+    "reviews": 112000000,
+    "ratingAvg": 4.5,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 3200000 },
+      { "name": "2 star", "count": 2500000 },
+      { "name": "3 star", "count": 5800000 },
+      { "name": "4 star", "count": 21000000 },
+      { "name": "5 star", "count": 80500000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Pinterest-logo.png",
+    "title": "Pinterest",
+    "companyName": "Pinterest, Inc.",
+    "id": 12,
+    "description": "Discover new ideas and inspiration for every part of your life.",
+    "size": 85,
+    "reviews": 52000000,
+    "ratingAvg": 4.6,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1200000 },
+      { "name": "2 star", "count": 900000 },
+      { "name": "3 star", "count": 2000000 },
+      { "name": "4 star", "count": 7000000 },
+      { "name": "5 star", "count": 41000000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Zoom_Communications_Logo.svg",
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications",
+    "id": 13,
+    "description": "Video conferencing and messaging across devices for businesses and individuals.",
+    "size": 115,
+    "reviews": 77000000,
+    "ratingAvg": 4.3,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 2200000 },
+      { "name": "2 star", "count": 1700000 },
+      { "name": "3 star", "count": 3800000 },
+      { "name": "4 star", "count": 11000000 },
+      { "name": "5 star", "count": 58000000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Uber_logo_2018.png",
+    "title": "Uber",
+    "companyName": "Uber Technologies, Inc.",
+    "id": 14,
+    "description": "Book rides quickly, easily, and safely around your city.",
+    "size": 97,
+    "reviews": 67000000,
+    "ratingAvg": 4.4,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1700000 },
+      { "name": "2 star", "count": 1200000 },
+      { "name": "3 star", "count": 3000000 },
+      { "name": "4 star", "count": 9500000 },
+      { "name": "5 star", "count": 51600000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Amazon_logo.svg",
+    "title": "Amazon Shopping",
+    "companyName": "Amazon Mobile LLC",
+    "id": 15,
+    "description": "Shop millions of products and enjoy fast delivery with Amazon Prime.",
+    "size": 140,
+    "reviews": 123000000,
+    "ratingAvg": 4.5,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 3500000 },
+      { "name": "2 star", "count": 2300000 },
+      { "name": "3 star", "count": 5000000 },
+      { "name": "4 star", "count": 19000000 },
+      { "name": "5 star", "count": 94000000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Google_Drive_icon_%282020%29.svg",
+    "title": "Google Drive",
+    "companyName": "Google LLC",
+    "id": 16,
+    "description": "Save files securely and access them from any device, anywhere.",
+    "size": 105,
+    "reviews": 52000000,
+    "ratingAvg": 4.6,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1300000 },
+      { "name": "2 star", "count": 1000000 },
+      { "name": "3 star", "count": 2500000 },
+      { "name": "4 star", "count": 8000000 },
+      { "name": "5 star", "count": 39200000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Netflix_icon.svg",
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "id": 17,
+    "description": "Share moments instantly through photos and videos that disappear.",
+    "size": 88,
+    "reviews": 95000000,
+    "ratingAvg": 4.3,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 3100000 },
+      { "name": "2 star", "count": 2400000 },
+      { "name": "3 star", "count": 5200000 },
+      { "name": "4 star", "count": 13000000 },
+      { "name": "5 star", "count": 71300000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/Trello_logo.svg",
+    "title": "Trello",
+    "companyName": "Atlassian",
+    "id": 18,
+    "description": "Organize anything, together. Manage your projects with boards, lists, and cards.",
+    "size": 65,
+    "reviews": 12000000,
+    "ratingAvg": 4.5,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 210000 },
+      { "name": "2 star", "count": 130000 },
+      { "name": "3 star", "count": 400000 },
+      { "name": "4 star", "count": 1600000 },
+      { "name": "5 star", "count": 9600000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Canva_icon_2021.svg",
+    "title": "Canva",
+    "companyName": "Canva Pty Ltd",
+    "id": 19,
+    "description": "Create beautiful designs, presentations, and social media graphics easily.",
+    "size": 125,
+    "reviews": 67000000,
+    "ratingAvg": 4.8,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 900000 },
+      { "name": "2 star", "count": 700000 },
+      { "name": "3 star", "count": 2000000 },
+      { "name": "4 star", "count": 10000000 },
+      { "name": "5 star", "count": 53400000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Google_Play_2022_logo.svg",
+    "title": "Google Play Store",
+    "companyName": "Google LLC",
+    "id": 20,
+    "description": "Discover and download millions of apps, games, movies, and books.",
+    "size": 145,
+    "reviews": 184000000,
+    "ratingAvg": 4.5,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 4200000 },
+      { "name": "2 star", "count": 2800000 },
+      { "name": "3 star", "count": 7200000 },
+      { "name": "4 star", "count": 19000000 },
+      { "name": "5 star", "count": 151000000 }
+    ]
+  }
+]
