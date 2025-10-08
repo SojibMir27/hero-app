@@ -3,8 +3,8 @@ import MainLayout from "../Layouts/MainLayout";
 import ErrorPage from "../Pages/ErrorPage";
 import Home from "../Pages/Home";
 import Apps from "../Pages/Apps";
-import Installation from "../Pages/Installation";
-
+import AppsDetails from "../Pages/AppsDetails";
+import Install from "../Pages/Install";
 
 const router = createBrowserRouter([
   {
@@ -26,13 +26,13 @@ const router = createBrowserRouter([
         element: <Apps />,
       },
       {
-        path: "/installation",
-        element: <Installation />,
+        path: "/install",
+        element: <Install />,
       },
-      // {
-      //   path: "/errorapps",
-      //   element: <ErrorApps />,
-      // },
+      {
+        path: "/app/:id",
+        element: <AppsDetails />,
+      },
     ],
   },
 ]);

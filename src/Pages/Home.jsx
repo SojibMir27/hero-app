@@ -9,7 +9,6 @@ const Home = () => {
   const { apps, loading, error } = useApps();
 
   const featuredApp = apps.slice(0, 8);
-  console.log(featuredApp);
 
   return (
     <div className="w-full md:w-11/12 mx-auto">
@@ -22,13 +21,13 @@ const Home = () => {
         <p className="text-center text-sm md:text-lg mx-auto text-[#627382] mt-4 mb-5">
           Explore All Trending Apps on the Market developed by us{" "}
         </p>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
           {featuredApp.map((app) => (
             <AppsCard key={app.id} app={app} />
           ))}
         </div>
-       
+
         <Link
           to="/apps"
           className="btn w-40 mx-auto flex justify-center mt-4 mb-4 bg-gradient-to-br from-[#632ee3] to-[#9f62f2] text-white font-semibold px-8"
