@@ -37,7 +37,7 @@ const Install = () => {
         <h1 className="font-bold text-4xl text-[#001931]">
           Your Installed Apps
         </h1>
-        <p className="text-[#627382] md:mt-0 mt-3">
+        <p className="text-[#627382] mt-3">
           Explore All Trending Apps on the Market developed by us
         </p>
       </div>
@@ -66,29 +66,24 @@ const Install = () => {
               </option>
             </select>
           </label>
-
-          {/* <ul
-            className="dropdown menu w-52 rounded-box bg-base-100 shadow-sm font-semibold"
-            popover="auto"
-            id="popover-1"
-            style={{ positionAnchor: "--anchor-1" }}
-          >
-            <li>
-              <a>Low to High</a>
-            </li>
-            <li>
-              <a>High to Low</a>
-            </li>
-          </ul> */}
         </div>
         {/* card */}
-        {sortedApp().map((ins) => (
-          <InstallApps
-            key={Math.random()}
-            handleRemoveApp={handleRemoveApp}
-            ins={ins}
-          />
-        ))}
+        {install.length === 0 ? (
+          <div className="flex flex-col justify-center items-center text-center py-20">
+            <h2 className="text-5xl font-bold text-red-500">
+              No Data Found!
+            </h2>
+            <p className="text-gray-500 text-xl mt-2">You haven't installed any apps yet.</p>
+          </div>
+        ) : (
+          sortedApp().map((ins) => (
+            <InstallApps
+              key={ins.id}
+              handleRemoveApp={handleRemoveApp}
+              ins={ins}
+            />
+          ))
+        )}
       </div>
     </div>
   );
