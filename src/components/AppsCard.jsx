@@ -5,10 +5,10 @@ const AppsCard = ({ app }) => {
 
   return (
     <div className="md:w-11/12 w-9/12 mx-auto md:mt-1 md:mb-1 mb-2">
-      <div className="card bg-base-100 shadow-sm">
+      <div className="card bg-base-100 shadow-sm hover:scale-102 transition ease-in-out hover:shadow-lg">
         <figure className="rounded ">
           <img
-            className="md:w-60 md:p-8 py-4 px-8 md:mt-2 mt-4 bg-[#d9d9d9] rounded"
+            className="md:w-60 md:px-2 md:py-2 py-4 px-4 md:mt-0 md:mr-1 md:ml-1 mt-4 bg-[#d9d9d9] rounded"
             src={image}
             alt="Apps"
           />

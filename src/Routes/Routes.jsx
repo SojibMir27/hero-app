@@ -4,19 +4,18 @@ import ErrorPage from "../Pages/ErrorPage";
 import Home from "../Pages/Home";
 import Apps from "../Pages/Apps";
 import Installation from "../Pages/Installation";
-import ErrorApps from "../Pages/ErrorApps";
+
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component: MainLayout,
-    hydrateFallbackElement: <p>Loading...</p>,
     errorElement: <ErrorPage />,
+    hydrateFallbackElement: <p>Loading...</p>,
     children: [
       {
         index: true,
         element: <Home />,
-        loader: () => fetch("./herodata.json"),
       },
       {
         path: "/home",
@@ -30,10 +29,10 @@ const router = createBrowserRouter([
         path: "/installation",
         element: <Installation />,
       },
-      {
-        path: "/errorapps",
-        element: <ErrorApps />,
-      },
+      // {
+      //   path: "/errorapps",
+      //   element: <ErrorApps />,
+      // },
     ],
   },
 ]);
