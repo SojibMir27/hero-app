@@ -71,9 +71,9 @@ const Install = () => {
         {install.length === 0 ? (
           <div className="flex flex-col justify-center items-center text-center py-20">
             <h2 className="text-5xl font-bold text-red-500">
-              No Data Found!
+              No App Install!
             </h2>
-            <p className="text-gray-500 text-xl mt-2">You haven't installed any apps yet.</p>
+            <p className="text-gray-500 text-xl mt-2">Please install any app.</p>
           </div>
         ) : (
           sortedApp().map((ins) => (
