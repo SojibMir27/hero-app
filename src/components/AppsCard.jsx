@@ -7,7 +7,7 @@ const AppsCard = ({ app }) => {
   return (
     <Link
       to={`/app/${id}`}
-      className="md:w-11/12 w-9/12 mx-auto md:mt-1 md:mb-1 mb-2"
+      className="w-11/12 mx-auto md:mt-1 md:mb-1 mb-2"
     >
       <div className="card bg-base-100 shadow-sm hover:scale-102 transition ease-in-out hover:shadow-lg">
         <figure className="rounded p-2">

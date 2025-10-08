@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import useApps from "../Hooks/useApps";
 import { toast } from "react-toastify";
+import { Bar, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { BarChart } from "lucide-react";
+import Chart from "./Chart";
+import ErrorApps from "./ErrorApps";
 
 const AppsDetails = () => {
   const { id } = useParams();
@@ -23,9 +27,10 @@ const AppsDetails = () => {
   }, [app]);
 
   if (loading) return <p>Loading...</p>;
-  if (!app) return <p>App not found</p>;
+  if (!app) return <ErrorApps />;
 
-  const { image, title, downloads, ratingAvg, size } = app;
+  const { image, title, downloads, ratingAvg, size, companyName, reviews } =
+    app;
 
   const handleInstallApp = () => {
     let existApps = JSON.parse(localStorage.getItem("install")) || [];
@@ -43,36 +48,69 @@ const AppsDetails = () => {
   return (
     <div
       to={`/app/${id}`}
-      className="md:w-11/12 w-9/12 mx-auto md:mt-1 md:mb-1 mb-2"
+      className="md:w-11/12 mx-auto md:mt-1 md:mb-1 mb-2 p-2"
     >
-      <div className="card bg-base-100 shadow-sm mt-5 mb-5">
-        <figure className="rounded p-2">
-          <img
-            className="md:w-60 w-20 md:px-2 md:py-2 py-4 px-4 md:mt-0 md:mr-1 md:ml-1 mt-4 bg-[#d9d9d9] rounded"
-            src={image}
-            alt="Apps"
-          />
-          <button
-            onClick={handleInstallApp}
-            disabled={isInstalled}
-            className="btn w-50 mx-auto flex justify-center mt-4 mb-4 bg-[#00d390] text-white font-semibold px-8"
-          >
-            {isInstalled ? "Installed✔️" : `Install Now (${size} MB)`}
-          </button>
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title font-bold">{title}</h2>
-          <div className="card-actions justify-between">
-            <div className="text-[#00d390] font-bold  bg-[#f1f5e8] rounded p-3 py-1 flex justify-center items-center">
-              <img className="w-3 mr-2" src="/icon-downloads.png" alt="" />
-              {downloads}
+      <div className="card mb-5 py-5 md:p-10">
+        <div className="flex flex-col md:flex-row">
+          <figure className="rounded-lg p-2 bg-white w-35 md:w-70 mx-auto md:mx-0">
+            <img
+              className="md:w-60 w-40 md:px-2 md:py-2 py-4 px-4 md:mt-0 md:mr-1 md:ml-1 mt-4 bg-white rounded-lg"
+              src={image}
+              alt="Apps"
+            />
+          </figure>
+          <div className="mx-1 mt-4 md:mt-0 md:ml-10">
+            <div className="mx-auto flex flex-col justify-center md:justify-normal md:items-baseline items-center">
+              <h2 className="font-bold md:text-4xl">
+                Company Name: {companyName}
+              </h2>
+              <p className="font-semibold mt-3">
+                Developed by{" "}
+                <small className="text-blue-500">productive.io</small>
+              </p>
             </div>
-            <div className=" text-[#ff8811] font-bold bg-[#fff0e1] rounded p-3 py-1 flex justify-center items-center">
-              <img className="w-3 mr-2" src="/icon-ratings.png" alt="" />
-              {ratingAvg}
+
+            <div className="divider"></div>
+
+            <div className="card-actions space-x-8 md:mx-0 mx-auto flex md:justify-normal justify-center">
+              <div className="space-y-1">
+                <img className="w-10 mr-2" src="/icon-downloads.png" alt="" />
+                <p>Downloads</p>
+                <p className="font-bold text-3xl md:text-4xl">{downloads}</p>
+              </div>
+              <div className="space-y-1">
+                <img className="w-10 mr-2" src="/icon-ratings.png" alt="" />
+                <p>Average Ratings</p>
+                <p className="font-bold text-3xl md:text-4xl">{ratingAvg}</p>
+              </div>
+              <div className="space-y-1">
+                <img className="w-10 mr-2" src="/icon-review.png" alt="" />
+                <p>Total Reviews</p>
+                <p className="font-bold text-3xl md:text-4xl">{reviews}</p>
+              </div>
             </div>
+
+            <button
+              onClick={handleInstallApp}
+              disabled={isInstalled}
+              className="btn w-40 md:w-50 mx-auto md:mx-0 mt-8 mb-4 bg-[#00d390] text-white font-semibold py-6 text-[10px] md:text-[16px] flex"
+            >
+              {isInstalled ? "Installed✔️" : `Install Now (${size} MB)`}
+            </button>
           </div>
         </div>
+
+        <div className="divider"></div>
+
+        <div className="border-b border-gray-300">
+          {/* Chart */}
+          <h3 className="font-bold text-xl text-[#001931] mt-5">Rating</h3>
+          <div className="">
+            <Chart ratings={app.ratings} />
+          </div>
+        </div>
+        <p className="font-semibold text-lg mt-5 mb-2">Description: </p>
+        <p className="text-[#627382]">{app.description}</p>
       </div>
     </div>
   );

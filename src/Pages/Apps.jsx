@@ -20,15 +20,15 @@ const handleGoBack = () => {
 
   return (
     <div className="w-full md:w-10/12 mx-auto mt-10 mb-5">
-      <h1 className="text-center mx-auto text-[#001931] text-5xl font-bold">
+      <h1 className="text-center mx-auto text-[#001931] text-3xl md:text-5xl font-bold">
         Our All Applications
       </h1>
       <p className="text-center text-sm md:text-lg mx-auto text-[#627382] mt-4 mb-10">
         Explore All Apps on the Market developed by us. We code for Millions{" "}
       </p>
 
-      <div className="flex justify-between items-center mb-5">
-        <h1 className="font-bold text-2xl text-[#001931]">
+      <div className="flex justify-between items-center mb-5 md:flex-row flex-col-reverse">
+        <h1 className="font-bold md:mt-0 mt-5 text-sm md:text-2xl text-[#001931]">
           ({searchApps.length}) Apps Found
         </h1>
 

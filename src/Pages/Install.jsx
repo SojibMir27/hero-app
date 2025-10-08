@@ -56,7 +56,7 @@ const Install = () => {
               onChange={(e) => setSortApp(e.target.value)}
             >
               <option className="text-[11px] md:text-lg" value="none">
-                Sort by App
+                Sort By Size
               </option>
               <option className="text-[11px] md:text-lg" value="app-asc">
                 Low-&gt;High
@@ -67,7 +67,7 @@ const Install = () => {
             </select>
           </label>
 
-          <ul
+          {/* <ul
             className="dropdown menu w-52 rounded-box bg-base-100 shadow-sm font-semibold"
             popover="auto"
             id="popover-1"
@@ -79,7 +79,7 @@ const Install = () => {
             <li>
               <a>High to Low</a>
             </li>
-          </ul>
+          </ul> */}
         </div>
         {/* card */}
         {sortedApp().map((ins) => (
