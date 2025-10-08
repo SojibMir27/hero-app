@@ -65,7 +65,7 @@ const AppsDetails = () => {
                 Company Name: {companyName}
               </h2>
               <p className="font-semibold mt-3">
-                Developed by{" "}
+                Developed By{" "}
                 <small className="text-blue-500">productive.io</small>
               </p>
             </div>
