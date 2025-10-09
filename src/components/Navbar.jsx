@@ -43,7 +43,7 @@ const Navbar = () => {
         <div className="ml-3">
           <NavLink
             to="/"
-            className="font-bold text-lg md:text-2xl text-[#9f62f2] flex"
+            className="no-line font-bold text-lg md:text-2xl text-[#9f62f2] flex"
           >
             <img className="w-8 h-8" src="logo.png" alt="" />
             HERO.IO
@@ -51,7 +51,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 font-semibold">
+        <ul className="menu menu-horizontal px-1 font-semibold ">
           <li>
             <NavLink to="/">Home</NavLink>
           </li>
