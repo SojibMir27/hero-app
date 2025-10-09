@@ -15,7 +15,7 @@ const Footer = () => {
           </nav>
 
           <nav>
-            <h6 className="footer-title">Services</h6>
+            <h6 className="font-bold text-lg text-gray-700">Services</h6>
             <a className="link link-hover">App Discovery</a>
             <a className="link link-hover">Smart Recommendations</a>
             <a className="link link-hover">Instant Install</a>
@@ -23,7 +23,7 @@ const Footer = () => {
           </nav>
 
           <nav>
-            <h6 className="footer-title">Company</h6>
+            <h6 className="font-bold text-lg text-gray-700">Company</h6>
             <a className="link link-hover">About HERO.IO</a>
             <a className="link link-hover">Our Mission</a>
             <a className="link link-hover">Careers</a>
