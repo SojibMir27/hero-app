@@ -5,13 +5,14 @@ import Home from "../Pages/Home";
 import Apps from "../Pages/Apps";
 import AppsDetails from "../Pages/AppsDetails";
 import Install from "../Pages/Install";
+import LoadingSpeener from "../components/LoadingSpeener";
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component: MainLayout,
     errorElement: <ErrorPage />,
-    hydrateFallbackElement: <p>Loading...</p>,
+    hydrateFallbackElement: <LoadingSpeener/>,
     children: [
       {
         index: true,

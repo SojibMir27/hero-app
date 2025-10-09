@@ -6,6 +6,7 @@ import { Bar, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import { BarChart } from "lucide-react";
 import Chart from "./Chart";
 import ErrorApps from "./ErrorApps";
+import LoadingSpeener from "../components/LoadingSpeener";
 
 const AppsDetails = () => {
   const { id } = useParams();
@@ -26,7 +27,7 @@ const AppsDetails = () => {
     setIsInstalled(foundApp);
   }, [app]);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <LoadingSpeener/>;
   if (!app) return <ErrorApps />;
 
   const { image, title, downloads, ratingAvg, size, companyName, reviews } =
