@@ -68,11 +68,11 @@ const AppsDetails = () => {
                 <div className="mx-1 mt-4 md:mt-0 md:ml-10">
                   <div className="mx-auto flex flex-col justify-center md:justify-normal md:items-baseline items-center">
                     <h2 className="font-bold md:text-4xl">
-                      Company Name: {companyName}
+                      App Name: {title}
                     </h2>
                     <p className="font-semibold mt-3">
                       Developed By{" "}
-                      <small className="text-blue-500">productive.io</small>
+                      <small className="text-blue-500">{companyName}</small>
                     </p>
                   </div>
 
