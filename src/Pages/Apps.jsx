@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import useApps from "../Hooks/useApps";
 import AppsCard from "../components/AppsCard";
-// import { Link } from "react-router";
-// import { ChevronDown, Search } from "lucide-react";
 import ErrorApps from "./ErrorApps";
 import LoadingSpeener from "../components/LoadingSpeener";
 
